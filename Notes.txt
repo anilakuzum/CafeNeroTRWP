@@ -1,0 +1,32 @@
+vNext Suggestions
+Yakındaki Nero'lar.
+Notifications
+Panorama
+Yakındaki Nero'lar
+
+Current API Set
+
+http://api.nero.mekanist.net/v2/user/beacon
+SEND {"Lat":41.04225,"ContactID":"aab364a5-7f39-e211-b76b-00155dc68800","Lon":29.00191}
+RESPONSE {"data":"ok","error":null}
+
+http://api.nero.mekanist.net/v2/loyality/promocards/aab364a5-7f39-e211-b76b-00155dc68800
+RESPONSE {"data":[{"Id":"adb364a5-7f39-e211-b76b-00155dc68800","Name":"9'luk Kart","MinReqItCount":9,"AvaliableCount":3,"DirtyBit":0}],"error":null}
+
+http://api.nero.mekanist.net/v2/QR/who/aab364a5-7f39-e211-b76b-00155dc68800
+response HTML QRCode
+
+http://api.nero.mekanist.net/v2/notification/get/aab364a5-7f39-e211-b76b-00155dc68800 
+RESPONSE 
+{"data":[{"ID":"7f058ece-ac3f-e211-b76b-00155dc68800","Title":"Aldiginiz içecekle beraber Nero Kart'iniza 1 damga eklediniz.","Body":"Nero Kart'inizdan damgalarinizi kontrol edebilirsiniz.","IsRead":false},{"ID":"b6ec949c-c03f-e211-b76b-00155dc68800","Title":"Aldiginiz içecekle beraber Nero Kart'iniza 2 damga eklediniz.","Body":"Nero Kart'inizdan damgalarinizi kontrol edebilirsiniz.","IsRead":false}],"error":null}
+
+http://api.nero.mekanist.net/v2/store/search/?lat=41.0422&lon=29.0021&all=false&pi=0 
+RESPONSE
+{"data":{"PageCount":1,"ResultCount":8,"Results":[{"PlaceId":0,"Id":"6c6eb552-3bd2-e111-b47a-782bcb40931a","PlaceName":"Caffe Nero -  Akaretler","Latitude":41.04236,"Longitude":29.00122,"Address":"Visnezade Mah. Süleyman Seba Caddesi D BLOK No:30 Akaretler-Siraevleri-Besiktas","Phone":"(0212) 227 32 82","ProvinceName":"Besiktas","CityName":"Istanbul","Distance":0.0758137},{"PlaceId":0,"Id":"b2cfc9ff-5ccb-e111-b47a-782bcb40931a","PlaceName":"Caffe Nero - Besiktas","Latitude":41.04508,"Longitude":29.00708,"Address":"Barbaros Bulvari No : 13 Besiktas","Phone":"(0212) 227 18 98","ProvinceName":null,"CityName":"Istanbul","Distance":0.5261534},{"PlaceId":0,"Id":"18e3d16b-ed03-e211-a982-00155dc68800","PlaceName":"Caffé Nero - Trump Towers AVM (Ofis Kati)","Latitude":41.04932,"Longitude":29.01215,"Address":"Trump Towers AVM Kat: -2","Phone":"0212 356 65 50","ProvinceName":"Sisli","CityName":"Istanbul","Distance":1.1562922},{"PlaceId":0,"Id":"513a8c1f-45d2-e111-b47a-782bcb40931a","PlaceName":"Caffe Nero - Valikonagi","Latitude":41.05182,"Longitude":28.9915,"Address":"Valikonagi Cad. Nizampalas Apt. No: 30 Nisantasi / Istanbul","Phone":"(0212) 291 66 76","ProvinceName":null,"CityName":null,"Distance":1.39062285},{"PlaceId":0,"Id":"dbf1e633-4dd2-e111-b47a-782bcb40931a","PlaceName":"Caffe Nero - Galatasaray","Latitude":41.03126,"Longitude":28.97448,"Address":"Mesrutiyet Cad. Koçak Plaza No:12/A Galatasaray-Beyoglu","Phone":"(0212) 249 46 81","ProvinceName":null,"CityName":"Istanbul","Distance":2.61637163},{"PlaceId":0,"Id":"0e134696-0d07-e211-a983-00155dc68800","PlaceName":"Caffé Nero - Galata Bbase","Latitude":41.02674,"Longitude":28.97696,"Address":"Dibek Sok. No:17 Galata","Phone":null,"ProvinceName":"Beyoglu","CityName":"Istanbul","Distance":2.72043252},{"PlaceId":0,"Id":"ab2e11c9-c38e-e111-be79-782bcb40931a","PlaceName":"Caffe Nero - Astoria AVM","Latitude":41.06814,"Longitude":29.0059,"Address":"Astoria AVM Büyükdere Cad. No:127 K: 1/13 Esentepe - Sisli / Istanbul","Phone":"(0212) 215 20 81","ProvinceName":null,"CityName":null,"Distance":2.90158963},{"PlaceId":0,"Id":"daad51b8-50c8-e111-b47a-782bcb40931a","PlaceName":"Caffe Nero - Trump Towers Çocuk Kati","Latitude":41.06758,"Longitude":28.9923,"Address":"Trump Towers AVM Kat: -3 Sisli / Istanbul","Phone":"(0212) 356 67 85","ProvinceName":null,"CityName":null,"Distance":2.93931}]},"error":null}
+
+170 GET http://api.nero.mekanist.net/v2/store/search/?lat=0&lon=0&all=true&pi=1 HTTP/1.1 	=> HTTP/1.1 200 OK	 [0.195 s]
+172 GET http://api.nero.mekanist.net/v2/store/search/?lat=0&lon=0&all=true&pi=2 HTTP/1.1 	=> HTTP/1.1 200 OK	 [0.198 s]
+
+
+
+

@@ -1,0 +1,41 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="cafenero.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+    	<StackPanel>
+		
+    		<Grid VerticalAlignment="Top" Height="237" Width="480" HorizontalAlignment="Left">
+    			<Rectangle Fill="{StaticResource NeroMor}" Stroke="Black"/>
+		
+    			<Image Source="/Assets/logo.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,38,0,0" Width="240"/>
+    			<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Caffè Nero ve Caffè Nero logosu, Caffè Nero Gıda Ürünleri A.Ş. tescilli ticari markası veya tescilli markasıdır. " VerticalAlignment="Top" Margin="0,137,0,0"/>
+		
+    		</Grid>
+    		<Grid Height="223" Background="#FFD82D4D">
+    			<Image Source="/Assets/mekanist.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,29,0,0" Width="240"/>
+    			<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="mekanist.net ve mekanist.net logosu, Mekanist.net İnternet Hiz. Ticaret A.Ş. tescilli ticari markası veya tescilli markasıdır." VerticalAlignment="Top" Margin="0,114,0,0"/>
+		
+    		</Grid>
+    		<TextBlock TextWrapping="Wrap" Foreground="Black" HorizontalAlignment="Center" Margin="15,27,15,0">
+    			<Run Text="Bu uygulama bir Caffe Nero müşterisi olan Daron Yöndem tarafından gönüllü olarak, herhangi bir gelir beklentisi olmadan yazılmıştır. Amaç bir müşteri olarak Caffe Nero'nun kampanyalarından Windows Phone kullanıcısı"/>
+    			<Run Text=" olarak faydalanabilmektir."/>
+    			<Run Text=" Uygulamanın veya Daron Yöndem'in ne Caffe Nero ile ne de mekanist.net ile bir ilişkisi yoktur."/>
+    		</TextBlock>
+		
+    	</StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

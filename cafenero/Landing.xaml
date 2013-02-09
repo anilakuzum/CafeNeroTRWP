@@ -1,0 +1,79 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="cafenero.Landing"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource NeroMor}">
+    	<Viewbox>
+    		<Canvas Height="682" Width="573">
+    			<Image Source="/Assets/cups.jpg" Stretch="Fill" Height="682" Width="573"/>
+    			<Canvas x:Name="stampCanvas" Height="519" Canvas.Left="64" Canvas.Top="55" Width="443">
+    				<Image x:Name="stamp1" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Left="6" Canvas.Top="2" Opacity="0"/>
+    				<Image x:Name="stamp2" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Left="179.062" Canvas.Top="2.387" RenderTransformOrigin="0.5,0.5" Opacity="0" UseLayoutRounding="False" d:LayoutRounding="Auto">
+    					<Image.RenderTransform>
+    						<CompositeTransform Rotation="28.947"/>
+    					</Image.RenderTransform>
+    				</Image>
+    				<Image x:Name="stamp3" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Left="357.329" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0">
+    					<Image.RenderTransform>
+    						<CompositeTransform Rotation="0.284"/>
+    					</Image.RenderTransform>
+    				</Image>
+    				<Image x:Name="stamp4" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Top="226.812" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0">
+    					<Image.RenderTransform>
+    						<CompositeTransform Rotation="79.951"/>
+    					</Image.RenderTransform>
+    				</Image>
+    				<Image x:Name="stamp5" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Left="181.45" Canvas.Top="226.016" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0">
+    					<Image.RenderTransform>
+    						<CompositeTransform Rotation="26.906"/>
+    					</Image.RenderTransform>
+    				</Image>
+    				<Image x:Name="stamp6" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Left="360.513" Canvas.Top="223.629" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0">
+    					<Image.RenderTransform>
+    						<CompositeTransform Rotation="-0.351"/>
+    					</Image.RenderTransform>
+    				</Image>
+    				<Image x:Name="stamp7" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Left="9.55" Canvas.Top="444.871" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0">
+    					<Image.RenderTransform>
+    						<CompositeTransform Rotation="-0.351"/>
+    					</Image.RenderTransform>
+    				</Image>
+    				<Image x:Name="stamp8" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Left="187.817" Canvas.Top="448.054" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0">
+    					<Image.RenderTransform>
+    						<CompositeTransform Rotation="21.019"/>
+    					</Image.RenderTransform>
+    				</Image>
+    				<Image x:Name="stamp9" Height="71" Source="/Assets/stamp.png" Stretch="Fill" Width="81" Canvas.Left="362.105" Canvas.Top="448.054" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0">
+    					<Image.RenderTransform>
+    						<CompositeTransform Rotation="-1.741"/>
+    					</Image.RenderTransform>
+    				</Image>
+    			</Canvas>
+    		</Canvas>
+    	</Viewbox>
+    	<ProgressBar x:Name="Progress" Height="10" VerticalAlignment="Top" Foreground="White"/>
+    </Grid>
+	    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Opacity="1" >
+
+            <shell:ApplicationBarIconButton  IconUri="/Assets/qr.png" Text="QR Code" Click="btn_QR" />
+			<shell:ApplicationBarIconButton  IconUri="/Assets/refresh.png" Text="yenile" Click="btn_Refresh" />
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="çıkış" Click="btn_Logout"/>
+                <shell:ApplicationBarMenuItem Text="uygulama hakkında" Click="btn_About"/>
+            </shell:ApplicationBar.MenuItems>
+
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>

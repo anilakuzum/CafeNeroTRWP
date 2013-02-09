@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cafenero", "cafenero\cafenero.csproj", "{2491C4C6-AE0E-4C56-A167-ABB4207114FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E63CF7FE-BF65-4600-96C6-3DE3042FCD5A}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.txt = Notes.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|ARM.Build.0 = Debug|ARM
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|ARM.Deploy.0 = Debug|ARM
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|x86.ActiveCfg = Debug|x86
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|x86.Build.0 = Debug|x86
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Debug|x86.Deploy.0 = Debug|x86
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|ARM.ActiveCfg = Release|ARM
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|ARM.Build.0 = Release|ARM
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|ARM.Deploy.0 = Release|ARM
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|x86.ActiveCfg = Release|x86
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|x86.Build.0 = Release|x86
+		{2491C4C6-AE0E-4C56-A167-ABB4207114FE}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
