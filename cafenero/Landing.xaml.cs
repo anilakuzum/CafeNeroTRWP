@@ -39,6 +39,8 @@ namespace cafenero
             IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
 
             WebClient web = new WebClient();
+            web.Headers["Accept-Language"] = "en-us";
+            web.Headers["User-Agent"] = "NeroIOS4/1.0.1 CFNetwork/609.1.4 Darwin/13.0.0";
             web.DownloadStringCompleted += web_DownloadStringCompleted;
             web.DownloadStringAsync(new Uri(string.Format("http://api.nero.mekanist.net/v2/loyality/promocards/{0}", settings["ID"]), UriKind.Absolute));
         }
