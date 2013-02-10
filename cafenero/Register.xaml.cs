@@ -60,7 +60,7 @@ namespace cafenero
             
             WebClient web = new WebClient();
             web.Headers["Content-Type"] = "application/json";
-            web.Headers["User-Agent"] = "NeroIOS4/1.0.1 CFNetwork/609 Darwin/13.0.0";
+            web.Headers["User-Agent"] = "NeroIOS4/1.0.1 CFNetwork/609.1.4 Darwin/13.0.0";
             web.UploadStringCompleted += web_UploadStringCompleted;
             string PostData = JsonConvert.SerializeObject(reg);
                         
