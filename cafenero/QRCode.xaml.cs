@@ -33,6 +33,8 @@ namespace cafenero
             string URL = string.Format("http://api.nero.mekanist.net/v2/QR/who/{0}",settings["ID"]);
 
             WebClient Download = new WebClient();
+            Download.Headers["Accept-Language"] = "en-us";
+            Download.Headers["User-Agent"] = "NeroIOS4/1.0.1 CFNetwork/609.1.4 Darwin/13.0.0";
             Download.DownloadStringCompleted += Download_DownloadStringCompleted;
             Download.DownloadStringAsync(new Uri(URL, UriKind.Absolute));
 
